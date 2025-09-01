@@ -8,19 +8,21 @@
 </head>
 <body>
     <div class="age-verification" id="ageModal">
-        <div class="modal-content">
-            <h2>Conteúdo para maiores de 18</h2>
-            <p>Você tem 18 anos ou mais?</p>
-            <button onclick="enterSite()">Sim, tenho 18+</button>
-            <button onclick="window.location.href='https://www.google.com'">Não</button>
-        </div>
+    <div class="modal-content">
+      <h2>Site exclusivo</h2>
+      <label for="senha">Digite o token:</label><br>
+      <input type="password" id="senha"><br><br>
+      <button id="btnEntrar">Entrar</button>
+      <p id="mensagemErro" style="color: red;"></p>
     </div>
+  </div>
 
     <header>
         <h1>WebCum - Videos pornô gratuitos</h1>
         <nav>
             <a href="#">Home</a>
             <a href="gay.html">Gay</a>
+            <a href="hentais.html">Hentais</a>
         </nav>
     </header>
 
@@ -28,6 +30,7 @@
         <section class="intro">
             <h2>Bem-vindo ao seu novo site adulto</h2>
             <p>Conteúdo exclusivo para maiores de 18 anos.</p>
+            <br>
         </section>
 
         <section class="videos">
@@ -58,11 +61,6 @@
     <footer>
         <p>&copy; 2025 WebCum. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        function enterSite() {
-            document.getElementById('ageModal').style.display = 'none';
-        }
-    </script>
+<script src="script.js"></script>
 </body>
 </html
